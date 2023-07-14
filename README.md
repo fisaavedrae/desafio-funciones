@@ -12,5 +12,5 @@ Para desarrollar estoy usando un macbook air con una resolución de 1440x900, si
 
 [link repo](https://github.com/fisaavedrae/desafio-funciones)
 
-[link live app](https://desafio-condiciones.vercel.app/)
+[link live app](https://desafio-funciones.vercel.app/)
 
