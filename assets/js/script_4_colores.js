@@ -40,6 +40,6 @@ document.addEventListener('keydown', function (event) {
     } else if (event.key === 'w') {
         pintar(card6, 'orange');
     } else if (event.key === 'e') {
-        pintar(card6, 'brown');
+        pintar(card6, 'saddlebrown');
     }
 })
