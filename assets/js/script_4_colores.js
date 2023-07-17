@@ -24,7 +24,7 @@ card4.addEventListener("click", function () {
 // Punto 4, Crea un script que guarde dentro de una variable global un color dependiendo de la letra del teclado presionada
 let color = ''; //Variable global para guardar color
 let card5 = document.getElementById("key");
-let card6 = document.getElementById("card6");
+let card6 = document.getElementById("key1");
 document.addEventListener('keydown', function (event) {
     if (event.key === 'a') {
         color = 'pink';
@@ -36,10 +36,10 @@ document.addEventListener('keydown', function (event) {
         color = 'skyblue';
         pintar(card5, 'pink');
     } else if (event.key === 'q') {
-        pintar(card6, 'skyblue');
+        pintar(key1, 'skyblue');
     } else if (event.key === 'w') {
-        pintar(card6, 'orange');
+        pintar(key1, 'orange');
     } else if (event.key === 'e') {
-        pintar(card6, 'saddlebrown');
+        pintar(key1, 'saddlebrown');
     }
 })
