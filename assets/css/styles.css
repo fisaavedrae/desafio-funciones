@@ -61,7 +61,16 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column;
+}
 
+.mensaje {
+    font-size: 0.8rem;
+    width: 200px;
+}
+
+#oculto {
+    visibility: hidden;
 }
 
 .card-1 {

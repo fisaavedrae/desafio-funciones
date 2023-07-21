@@ -24,22 +24,31 @@ card4.addEventListener("click", function () {
 // Punto 4, Crea un script que guarde dentro de una variable global un color dependiendo de la letra del teclado presionada
 let color = ''; //Variable global para guardar color
 let card5 = document.getElementById("key");
-let card6 = document.getElementById("key1");
+let card7 = document.getElementById("div-oculto");
+let divOculto = '<div id="key1" style="height: 200px; width: 200px;"></div>';
+let mensajeOculto = '<p class="mensaje">Al presionar las teclas q, w ó e , se deberá cambiar el color del div a amarillo, azul o café respectivamente. </p>';
 document.addEventListener('keydown', function (event) {
-    if (event.key === 'a') {
-        color = 'pink';
-        pintar(card5, 'purple');
-    } else if (event.key === 's') {
-        color = 'orange';
-        pintar(card5, 'gray');
-    } else if (event.key === 'd') {
-        color = 'skyblue';
+
+    if (event.key.toLowerCase() === 'a') {
+        color = 'pink';//Variable global para guardar color
         pintar(card5, 'pink');
-    } else if (event.key === 'q') {
-        pintar(key1, 'skyblue');
-    } else if (event.key === 'w') {
-        pintar(key1, 'orange');
-    } else if (event.key === 'e') {
-        pintar(key1, 'saddlebrown');
+    } else if (event.key.toLowerCase() === 's') {
+        color = 'orange';//Variable global para guardar color
+        pintar(card5, 'orange');
+    } else if (event.key.toLowerCase() === 'd') {
+        color = 'skyblue';//Variable global para guardar color
+        pintar(card5, 'skyblue');
+    } else if (event.key.toLowerCase() === 'q') {
+        card7.innerHTML = divOculto + mensajeOculto;
+        let card6 = document.getElementById("key1");
+        pintar(card6, 'yellow');
+    } else if (event.key.toLowerCase() === 'w') {
+        card7.innerHTML = divOculto + mensajeOculto;
+        let card6 = document.getElementById("key1");
+        pintar(card6, 'blue');
+    } else if (event.key.toLowerCase() === 'e') {
+        card7.innerHTML = divOculto + mensajeOculto;
+        let card6 = document.getElementById("key1");
+        pintar(card6, 'saddlebrown');
     }
 })
